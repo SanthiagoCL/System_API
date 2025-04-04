@@ -1,5 +1,5 @@
 
-exports.teste =  async (req, res) => {
+exports.testeGet=  async (req, res) => {
     try {
         const result =  " Teste com sucesso. ";
         return res.status(200).json({message: result});
@@ -11,7 +11,7 @@ exports.teste =  async (req, res) => {
 };
 
 
-exports.validar =  async (req, res) => {
+exports.validarGet =  async (req, res) => {
     try {
         const result =  "   Ok... ";
         return res.status(200).json({message: result});
@@ -23,7 +23,7 @@ exports.validar =  async (req, res) => {
 };
 
 
-exports.verificar =  async (req, res) => {
+exports.testePut =  async (req, res) => {
     try {
         const result =  "   Blz... ";
         return res.status(200).json({message: result});
@@ -35,9 +35,31 @@ exports.verificar =  async (req, res) => {
 };
 
 
-exports.atualizar =  async (req, res) => {
+exports.validarPost=  async (req, res) => {
     try {
         const result =  "   Pdp... ";
+        return res.status(200).json({message: result});
+    } catch (error) {
+        const message ="A solicitação falhou: "
+        res.status(424).send(message + error.message)
+
+    }
+};
+
+exports.TestePut =  async (req, res) => {
+    try {
+        const result =  "  Ok! ";
+        return res.status(200).json({message: result});
+    } catch (error) {
+        const message ="A solicitação falhou: "
+        res.status(424).send(message + error.message)
+
+    }
+};
+
+exports.validarPut=  async (req, res) => {
+    try {
+        const result =  "  Ok! ";
         return res.status(200).json({message: result});
     } catch (error) {
         const message ="A solicitação falhou: "
