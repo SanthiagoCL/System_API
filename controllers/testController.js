@@ -23,7 +23,7 @@ exports.validarGet =  async (req, res) => {
 };
 
 
-exports.testePut =  async (req, res) => {
+exports.testePost=  async (req, res) => {
     try {
         const result =  "   Blz... ";
         return res.status(200).json({message: result});

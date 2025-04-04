@@ -1,3 +1,5 @@
+
+
 exports.listUsersGet =  async (req, res) => {
     try {
         const result =  " Teste com sucesso.";
@@ -69,3 +71,4 @@ exports.listUserPut =  async (req, res) => {
 
     }
 };
+
